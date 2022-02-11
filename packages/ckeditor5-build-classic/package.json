@@ -1,5 +1,5 @@
 {
-  "name": "@ckeditor/ckeditor5-build-classic-placeholder",
+  "name": "@akdrms/ckeditor5-build-classic-placeholder",
   "version": "32.0.0",
   "description": "The classic editor build of CKEditor 5 – the best browser-based rich text editor.",
   "keywords": [
@@ -29,7 +29,6 @@
     "@ckeditor/ckeditor5-autoformat": "^32.0.0",
     "@ckeditor/ckeditor5-basic-styles": "^32.0.0",
     "@ckeditor/ckeditor5-block-quote": "^32.0.0",
-    "@ckeditor/ckeditor5-easy-image": "^32.0.0",
     "@ckeditor/ckeditor5-editor-classic": "^32.0.0",
     "@ckeditor/ckeditor5-essentials": "^32.0.0",
     "@ckeditor/ckeditor5-font": "^32.0.0",
@@ -40,20 +39,15 @@
     "@ckeditor/ckeditor5-list": "^32.0.0",
     "@ckeditor/ckeditor5-media-embed": "^32.0.0",
     "@ckeditor/ckeditor5-paragraph": "^32.0.0",
-    "@ckeditor/ckeditor5-paste-from-office": "^32.0.0",
     "@ckeditor/ckeditor5-source-editing": "^32.0.0",
-    "@ckeditor/ckeditor5-table": "^32.0.0",
-    "@ckeditor/ckeditor5-typing": "^32.0.0",
-    "sanitize-html": "^2.7.0"
+    "@ckeditor/ckeditor5-table": "^32.0.0"
   },
   "devDependencies": {
     "@ckeditor/ckeditor5-core": "^32.0.0",
     "@ckeditor/ckeditor5-dev-utils": "^28.0.1",
     "@ckeditor/ckeditor5-dev-webpack-plugin": "^28.0.1",
-    "@ckeditor/ckeditor5-html-embed": "^32.0.0",
     "@ckeditor/ckeditor5-theme-lark": "^32.0.0",
     "@ckeditor/ckeditor5-upload": "^32.0.0",
-    "@types/sanitize-html": "^2.6.2",
     "ckeditor5-placeholder": "^1.2.1",
     "css-loader": "^5.2.7",
     "postcss-loader": "^4.3.0",
@@ -70,14 +64,19 @@
   "author": "CKSource (http://cksource.com/)",
   "license": "GPL-2.0-or-later",
   "homepage": "https://ckeditor.com/ckeditor-5",
-  "bugs": "https://github.com/ckeditor/ckeditor5/issues",
+  "bugs": {
+    "url": "https://github.com/ckeditor/ckeditor5/issues"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ckeditor/ckeditor5.git",
+    "url": "git+https://github.com/ckeditor/ckeditor5.git",
     "directory": "packages/ckeditor5-build-classic"
   },
   "scripts": {
     "build": "webpack --mode production",
     "preversion": "npm run build"
+  },
+  "directories": {
+    "test": "tests"
   }
 }

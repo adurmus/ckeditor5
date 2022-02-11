@@ -14,21 +14,20 @@ import Heading from '@ckeditor/ckeditor5-heading/src/heading';
 import Link from '@ckeditor/ckeditor5-link/src/link';
 import List from '@ckeditor/ckeditor5-list/src/list';
 import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph';
-import Table  from '@ckeditor/ckeditor5-Table/src/table';
+import Table from '@ckeditor/ckeditor5-table/src/table';
 import FontFamily from '@ckeditor/ckeditor5-font/src/fontfamily';
 import FontFamilyEditing from '@ckeditor/ckeditor5-font/src/fontfamily/fontfamilyediting';
 import FontColor from '@ckeditor/ckeditor5-font/src/fontcolor';
 import FontSize from '@ckeditor/ckeditor5-font/src/fontsize';
-import MediaEmbed from '@ckeditor/ckeditor5-media-embed/src/mediaembed';
 import Image from '@ckeditor/ckeditor5-image/src/image';
 import ImageCaption from '@ckeditor/ckeditor5-image/src/imagecaption';
 import ImageStyle from '@ckeditor/ckeditor5-image/src/imagestyle';
 import ImageToolbar from '@ckeditor/ckeditor5-image/src/imagetoolbar';
 import ImageUpload from '@ckeditor/ckeditor5-image/src/imageupload';
 import Indent from '@ckeditor/ckeditor5-indent/src/indent';
-import Placeholder from "ckeditor5-placeholder";
+import Placeholder from 'ckeditor5-placeholder';
 import BlockQuote from '@ckeditor/ckeditor5-block-quote/src/blockquote';
-import ImageInsert  from '@ckeditor/ckeditor5-image/src/imageinsert';
+import ImageInsert from '@ckeditor/ckeditor5-image/src/imageinsert';
 import SourceEditing from '@ckeditor/ckeditor5-source-editing/src/sourceediting';
 import Base64UploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/base64uploadadapter';
 
@@ -51,7 +50,6 @@ ClassicEditor.builtinPlugins = [
 	FontSize,
 	FontFamilyEditing,
 	FontColor,
-	MediaEmbed,
 	ImageCaption,
 	ImageStyle,
 	ImageInsert,
@@ -68,8 +66,8 @@ ClassicEditor.builtinPlugins = [
 ClassicEditor.defaultConfig = {
 	toolbar: {
 		items: [
-			'heading', '|', 'bold', 'italic', 'placeholder','sourceEditing'
-			]
+			'heading', '|', 'bold', 'italic', 'placeholder', 'sourceEditing'
+		]
 	},
 	image: {
 		toolbar: [
